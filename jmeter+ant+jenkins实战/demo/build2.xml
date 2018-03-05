@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ant-jmeter-test" default="all" basedir=".">
+<!--    　　为生成的jtl和html文件加时间戳-->
+    <tstamp>
+        <format property="time" pattern="yyyyMMddhhmm" />
+    </tstamp>
+<!--    　　 更改为自己的jmeter路径-->
+    <property name="jmeter.home" value="/Users/huaan720/Downloads/jmeter_new/apache-jmeter-3.3" />
+<!--    　　 更改为自己的jtl文件结果存放路径-->
+    <property name="jmeter.result.jtl.dir" value="/Users/huaan720/Downloads/jmeter_new/demo/jtl" />
+<!--    　　 更改为自己的html文件结果存放路径-->
+    <property name="jmeter.result.html.dir" value="/Users/huaan720/Downloads/jmeter_new/demo/html" />
+<!--    生成的html报告的前缀-->
+    <property name="ReportName" value="TestReport" />
+<!--    　　 jlt和html文件名称-->
+    <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
+    <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
+    
+    <target name="all">
+        <antcall target="test" />
+        <antcall target="report" />
+    </target>
+    
+    <target name="test">
+        <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
+        <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
+<!--            　　　　　　　改为自己的jmx文件所在路径-->
+            <testplans dir="/Users/huaan720/Downloads/jmeter_new/demo" includes="*.jmx" />
+        </jmeter>
+    </target>
+    
+    <target name="report">
+<!--        　　　　 使用jmeter自己的转化文件：将jtl转化为xsl文件，改为自己的xsl文件所在路径-->
+        <xslt in="${jmeter.result.jtlName}" out="${jmeter.result.htmlName}" style="${jmeter.home}/extras/jmeter-results-detail-report_21.xsl" />
+        <copy todir="${jmeter.result.html.dir}">
+            <fileset dir="${jmeter.home}/extras">
+                <include name="collapse.png" />
+                <include name="expand.png" />
+            </fileset>
+        </copy>
+    </target>
+</project>

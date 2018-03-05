@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="184" it="0" lt="184" ct="124" ts="1520231466395" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2781" sby="117" ng="2" na="2"/>
+<httpSample t="88" it="0" lt="87" ct="44" ts="1520231466547" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-2" dt="text" by="2781" sby="117" ng="1" na="1"/>
+<httpSample t="70" it="0" lt="70" ct="34" ts="1520231466749" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-3" dt="text" by="2781" sby="117" ng="1" na="1"/>
+<httpSample t="84" it="0" lt="83" ct="38" ts="1520231466946" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-4" dt="text" by="2781" sby="117" ng="1" na="1"/>
+<httpSample t="81" it="0" lt="81" ct="38" ts="1520231467147" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-5" dt="text" by="2781" sby="117" ng="1" na="1"/>
+
+<httpSample t="172" it="0" lt="172" ct="108" ts="1520231469617" s="true" lb="百度－get2" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2781" sby="117" ng="1" na="1"/>
+<httpSample t="141" it="0" lt="122" ct="51" ts="1520231469801" s="true" lb="ANT批量执行Jmeter脚本网页" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="26880" sby="142" ng="1" na="1"/>
+
+<httpSample t="623" it="0" lt="623" ct="413" ts="1520232735887" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-2" dt="text" by="2781" sby="117" ng="5" na="5"/>
+<httpSample t="737" it="0" lt="737" ct="526" ts="1520232735773" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2781" sby="117" ng="5" na="5"/>
+<httpSample t="420" it="0" lt="420" ct="209" ts="1520232736091" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-3" dt="text" by="2781" sby="117" ng="5" na="5"/>
+<httpSample t="291" it="0" lt="291" ct="199" ts="1520232736293" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-4" dt="text" by="2781" sby="117" ng="2" na="2"/>
+<httpSample t="191" it="0" lt="191" ct="90" ts="1520232736493" s="true" lb="百度－get1" rc="200" rm="OK" tn="线程组 1-5" dt="text" by="2781" sby="117" ng="1" na="1"/>
+
+<httpSample t="269" it="0" lt="268" ct="139" ts="1520232739090" s="true" lb="百度－get2" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2781" sby="117" ng="1" na="1"/>
+<httpSample t="273" it="0" lt="177" ct="102" ts="1520232739367" s="true" lb="ANT批量执行Jmeter脚本网页" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="26851" sby="142" ng="1" na="1"/>
+
+</testResults>
