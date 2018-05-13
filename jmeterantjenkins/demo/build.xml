@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF8"?>
+﻿<?xml version="1.0" encoding="UTF8"?>
 
 <project name="ant-jmeter-test" default="run" basedir=".">
     
@@ -14,7 +14,7 @@
     
     <!-- 本地的 Jmeter 目录-->
     
-    <property name="jmeter.home" value="/Users/huaan720/Downloads/jmeter_new/apache-jmeter-3.3" />
+    <property name="jmeter.home" value="e:/apache-jmeter-4.0" />
     
     <!-- jmeter生成报告的路径-->
     
@@ -52,7 +52,7 @@
             
             <!-- 声明要运行的脚本和此目录下的jmeter脚本-->
             
-            <testplans dir="/Users/huaan720/Downloads/jmeter_new/demo" includes="*.jmx" />
+            <testplans dir="jmeterantjenkins/demo" includes="*.jmx" />
             
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
             
