@@ -52,7 +52,7 @@
             
             <!-- 声明要运行的脚本和此目录下的jmeter脚本-->
             
-            <testplans dir="jmeterantjenkins/demo" includes="*.jmx" />
+            <testplans dir="." includes="*.jmx" />
             
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
             
